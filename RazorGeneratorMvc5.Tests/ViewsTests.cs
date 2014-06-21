@@ -29,5 +29,14 @@ namespace RazorGeneratorMvc5.Tests
             HtmlNode node = doc.DocumentNode.Element("h2");
             Assert.AreEqual("Testing", node.InnerHtml.Trim());
         }
+
+        [TestMethod]
+        public void TestAccountLoginView()
+        {
+            var view = new RazorGeneratorMvc5.Views.Account.Login();
+
+            // This blows up...
+            HtmlDocument doc = view.RenderAsHtml();
+        }
     }
 }
