@@ -29,6 +29,12 @@ namespace RazorGeneratorMvc5.Views.Home
     using System.Web.WebPages;
     using RazorGeneratorMvc5;
     
+    #line 1 "..\..\Views\Home\Index.cshtml"
+    using RazorGeneratorMvc5.Views.Helpers;
+    
+    #line default
+    #line hidden
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/Views/Home/Index.cshtml")]
     public partial class Index : System.Web.Mvc.WebViewPage<dynamic>
@@ -38,8 +44,10 @@ namespace RazorGeneratorMvc5.Views.Home
         }
         public override void Execute()
         {
+WriteLiteral("\r\n");
+
             
-            #line 1 "..\..\Views\Home\Index.cshtml"
+            #line 3 "..\..\Views\Home\Index.cshtml"
   
     ViewBag.Title = "Home Page";
 
@@ -68,13 +76,24 @@ WriteLiteral(" class=\"row\"");
 WriteLiteral(">\r\n    Loaded assembly: ");
 
             
-            #line 14 "..\..\Views\Home\Index.cshtml"
+            #line 16 "..\..\Views\Home\Index.cshtml"
                 Write(GetType().Assembly);
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n    <div");
+WriteLiteral("\r\n\r\n    <div>\r\n        <h3>Using a Helper</h3>\r\n");
+
+WriteLiteral("        ");
+
+            
+            #line 20 "..\..\Views\Home\Index.cshtml"
+   Write(Html.WriteList(new[] { "Hello", "Razor" }));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n    </div>\r\n\r\n    <div");
 
 WriteLiteral(" class=\"col-md-4\"");
 

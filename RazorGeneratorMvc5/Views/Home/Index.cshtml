@@ -1,4 +1,6 @@
-﻿@{
+﻿@using RazorGeneratorMvc5.Views.Helpers
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -12,6 +14,11 @@
 
 <div class="row">
     Loaded assembly: @GetType().Assembly
+
+    <div>
+        <h3>Using a Helper</h3>
+        @Html.WriteList(new[] { "Hello", "Razor" })
+    </div>
 
     <div class="col-md-4">
         <h2>Getting started</h2>

@@ -236,6 +236,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_SetPasswordPartial.cshtml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Helpers\ListHelper.generated.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListHelper.cshtml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Home\About.generated.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -374,6 +379,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml">
       <Generator>RazorGenerator</Generator>
       <LastGenOutput>_LoginPartial.generated.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\Helpers\ListHelper.cshtml">
+      <Generator>RazorGenerator</Generator>
+      <LastGenOutput>ListHelper.generated.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
