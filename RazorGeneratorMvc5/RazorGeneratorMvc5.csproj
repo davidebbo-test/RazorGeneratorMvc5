@@ -384,6 +384,7 @@
       <Generator>RazorGenerator</Generator>
       <LastGenOutput>ListHelper.generated.cs</LastGenOutput>
     </Content>
+    <Content Include="Views\razorgenerator.directives" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
