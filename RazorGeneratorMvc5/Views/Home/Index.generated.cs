@@ -88,7 +88,7 @@ WriteLiteral("        ");
 
             
             #line 20 "..\..\Views\Home\Index.cshtml"
-   Write(Html.WriteList(new[] { "Hello", "Razor" }));
+   Write(ListHelper.WriteList(Html, new[] { "Hello", "Razor" }));
 
             
             #line default

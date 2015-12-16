@@ -17,7 +17,7 @@
 
     <div>
         <h3>Using a Helper</h3>
-        @Html.WriteList(new[] { "Hello", "Razor" })
+        @ListHelper.WriteList(Html, new[] { "Hello", "Razor" })
     </div>
 
     <div class="col-md-4">
